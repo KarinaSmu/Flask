@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Регистрация</title>
+</head>
+<body>
+    <h1>Регистрация</h1>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        <label for="first_name">Имя:</label>
+        {{ form.first_name() }}
+        <br>
+        <label for="last_name">Фамилия:</label>
+        {{ form.last_name() }}
+        <br>
+        <label for="email">Email:</label>
+        {{ form.email() }}
+        <br>
+        <label for="password">Пароль:</label>
+        {{ form.password() }}
+        <br>
+        {{ form.submit() }}
+    </form>
+</body>
+</html>
